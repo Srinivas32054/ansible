@@ -12,6 +12,6 @@
     prompt: enter trainer name
     private: false       
   tasks:
-  - name: print the variable
+  - name: print course information
     ansible.builtin.debug:
       msg: "course is {{COURSE}} , duration is {{DURATION}}, trainer is {{TRAINER}}"
