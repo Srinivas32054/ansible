@@ -1,0 +1,17 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: course
+    prompt: please enter course name
+    private: false
+  - name: duration
+    prompt: enter duration
+    private: false
+  - name: trainer
+    prompt: enter trainer name
+    private: false       
+  tasks:
+  - name: print the variable
+    ansible.builtin.debug:
+      msg: "course is {{COURSE}} , duration is {{DURATION}}, trainer is {{TRAINER}}"
