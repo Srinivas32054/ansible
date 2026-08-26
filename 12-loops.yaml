@@ -2,12 +2,12 @@
   hosts: local
   connection: local
   tasks: 
-  - name: print names
-    ansible.builtin.debud:
-      msg: "Hello {{ item }}"
-    loops:
-    - srinu
-    - ashok
-    - chinipi
-    - appi
-    - anil
+    - name: print names
+      ansible.builtin.debud:
+        msg: "Hello {{ item }}"
+      loops:
+      - srinu
+      - ashok
+      - chinipi
+      - appi
+      - anil
