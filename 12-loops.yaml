@@ -3,7 +3,7 @@
   connection: local
   tasks: 
     - name: print names
-      ansible.builtin.debud:
+      ansible.builtin.debug:
         msg: "Hello {{ item }}"
       loops:
       - srinu
